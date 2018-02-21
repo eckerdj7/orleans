@@ -84,6 +84,6 @@ The `GameGrain` maintains the state of the game, the players in the game, whose 
 
 The `MakeMove` method handles the game logic, checking the validity of a move and, once played, checks if that move ends the game. In the case of the game ending, the player grains are informed of the outcome via the LeaveGame call.
 
-The game was designed with social gaming in mind, so the main mechanism for inviting other players is an "out of band" from the game, and would probably be an invite to a friend, sending the GUID that represents the game. As an optimization purely for testing, a pairing grain was created that uses MemoryCache to hold a the list of games that are available to join, with an expiry of one hour, to stop "stale" games appearing on the list.
+The game was designed with social gaming in mind, so the main mechanism for inviting other players is an "out of band" from the game, and would probably be an invite to a friend, sending the GUID that represents the game. As an optimization purely for testing, a pairing grain was created that uses MemoryCache to hold a list of games that are available to join, with an expiry of one hour, to stop "stale" games appearing on the list.
 
  An ASP.NET MVC application serves an HTML page. JavaScript running in the browser polls the web server, and retrieve JSON data, which it renders using [Handlebars templates](http://handlebarsjs.com/).
