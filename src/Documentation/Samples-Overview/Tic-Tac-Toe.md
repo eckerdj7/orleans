@@ -64,7 +64,7 @@ The player grain handles the creating of new games (so another player can then j
 
 **Game Grain**
 
-Each game is also represented by a `GameGrain`. They are also uniquely identify using a GUID.
+Each game is also represented by a `GameGrain`. They are also uniquely identified using a GUID.
 
 ``` csharp
 public interface IGame : Orleans.IGrain
